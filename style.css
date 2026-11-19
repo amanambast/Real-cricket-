@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #071426;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+}
+
+header {
+    padding: 20px;
+    background: linear-gradient(90deg,#006400,#00a86b);
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 27px;
+}
+
+.scoreboard {
+    background: #122a43;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#score {
+    color: #00ff9d;
+    font-size: 45px;
+    margin: 10px;
+}
+
+#stadium {
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #164b28;
+}
+
+#stadium canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+button, select {
+    padding: 14px 8px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.controls button {
+    flex: 1;
+    background: #00c878;
+    color: white;
+}
+
+.settings {
+    margin-top: 20px;
+    padding: 20px;
+    background: #122a43;
+    border-radius: 15px;
+}
+
+.settings button {
+    background: #ffb000;
+    margin: 10px 5px;
+}
+
+.settings select {
+    margin-top: 12px;
+}
