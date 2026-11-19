@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Cricket 3D - Aman Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+<header>
+    <h1>🏏 REAL CRICKET 3D</h1>
+    <p>AMAN EDITION</p>
+</header>
+
+<div class="scoreboard">
+    <h2 id="team">INDIA 🇮🇳</h2>
+    <h1 id="score">0 / 0</h1>
+    <p>Overs: <span id="overs">0.0</span></p>
+    <p id="status">WELCOME TO THE GAME</p>
+</div>
+
+<div id="stadium"></div>
+
+<div class="controls">
+    <button onclick="hitBall('DEFEND')">DEFEND</button>
+    <button onclick="hitBall('NORMAL')">SHOT</button>
+    <button onclick="hitBall('POWER')">POWER SHOT</button>
+</div>
+
+<div class="settings">
+    <h3>Match Settings</h3>
+
+    <select id="oversLimit">
+        <option value="2">2 Overs</option>
+        <option value="5">5 Overs</option>
+        <option value="10">10 Overs</option>
+        <option value="20" selected>20 Overs</option>
+        <option value="50">50 Overs</option>
+    </select>
+
+    <button onclick="startGame()">START MATCH</button>
+    <button onclick="resetGame()">RESET</button>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game3d.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
